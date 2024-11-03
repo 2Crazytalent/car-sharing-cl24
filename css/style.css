@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #000000;
+    --white-color: #FFFFFF;
+    --dark-overlay-color: #00000066;
+    --light-overlay-color: #FFFFFF33;
+    --secondary-color: #FF0000;
+    --grey-overlay-color: #00000040;
+    --secondary-overlay-color: #FF00004D;
+    --white-overlay-color: #FFFFFF29;
+    --text-color: #6A6A6A;
+    --dark-adicent-color: #28272C;
+    --white-text-color: #B2B2B2;
+    --dark-teriary-color: #D1D1D1;
+
+
+}
+
+.container {
+    width: 1088px;
+    margin: 0 auto;
+}
