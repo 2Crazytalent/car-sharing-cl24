@@ -8,14 +8,88 @@
     --secondary-overlay-color: #FF00004D;
     --white-overlay-color: #FFFFFF29;
     --text-color: #6A6A6A;
-    --dark-adicent-color: #28272C;
+    --dark-adjecent-color: #28272C;
     --white-text-color: #B2B2B2;
     --dark-teriary-color: #D1D1D1;
-
-
 }
-
+html, body, * {
+    box-sizing: border-box;
+}
 .container {
     width: 1088px;
     margin: 0 auto;
+}
+header {
+    background-image: url('../images/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 807px;
+}
+header .top-nav {
+    height: 93px;
+    background-color: var(--dark-overlay-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    font: normal normal bold 16px/22px Nunito Sans;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 73px;
+}
+.logo {
+    display: flex;
+}
+.logo span {
+    font: normal normal bold 35px/47px Nunito Sans;
+    color: var(--white-color);
+    margin-left: 10px;
+}
+.logo span.colored { color: var(--secondary-color); }
+
+.banner {
+    margin-top: 254px;
+}
+
+.banner h1 {
+    font: normal normal 900 90px/90px Nunito Sans;
+    color: var(--white-color);
+    text-align: center;
+    height: 123px;
+}
+
+.banner p {
+    margin-top: 10px;
+    font: normal normal bold 16px/22px Nunito Sans;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.actions {
+    margin-top: 54px;
+    text-align: center;
+}
+
+.btn {
+    padding: 22px 55px 22px 55px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    margin-right: 25px;
+}
+
+.btn-secondary {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
 }
