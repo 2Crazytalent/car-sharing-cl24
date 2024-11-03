@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <title>Car sharing</title>
@@ -14,7 +14,7 @@
     <div class="top-nav ">
         <div class="container top-center">
             <div class="logo">
-                <img src="images/icon.png" alt="icon">
+                <img src="images/icon.svg" alt="icon">
                 <span><span class="colored">CAR</span> SHARING</span>
             </div>
             <nav>
@@ -33,7 +33,7 @@
             <a href="#" class="btn btn-secondary">Key features</a>
         </div>
     </section>
-</header>
+</header> <!-- e: header -->
 <div class="icon container">
     <a href="#scroll">&nbsp;</a>
 </div>
@@ -43,8 +43,7 @@
         <h2>Blog</h2>
         <div class="section__heading__line"></div>
     </div>
-
-    <section class="blog" id="blog">
+    <div class="blog" id="blog">
         <article>
             <img src="images/photo1.png" alt="article image">
             <h3>LOREM IPSUM SIT DOLOR</h3>
@@ -63,7 +62,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#">Read more</a>
         </article>
-    </section>
+    </div> <!-- e: blog -->
 </main>
 <section class="dark service" id="service">
     <div class="container">
@@ -72,7 +71,7 @@
             <h2>Service</h2>
             <div class="section__heading__line"></div>
         </div>
-        <section class="services">
+        <div class="services">
             <article>
                 <img src="images/mini1.png" alt="service image">
                 <h3>LOREM IPSUM SIT DOLOR</h3>
@@ -97,28 +96,29 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="#">Read more</a>
             </article>
-        </section>
+        </div> <!-- e: services -->
     </div>
-</section>
+</section> <!-- e: service -->
 <section class="container contact" id="contact">
     <div class="section__heading">
         <div class="section__heading__line"></div>
         <h2>Contact</h2>
         <div class="section__heading__line"></div>
-    </div>        <section class="contact__form">
-    <img src="images/contact.png" alt="contact image">
-    <form action="#">
-        <input type="text" placeholder="Type your name" required class="error"><br/>
-        <input type="text" placeholder="Type your e-mail"><br/>
-        <textarea placeholder="Type your message"></textarea><br/>
-        <div class="checkhox">
-            <input type="checkbox" id="gdpr">
-            <label for="gdpr">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label><br/>
-        </div>
-        <input type="submit" value="Send">
-    </form>
-</section>
-</section>
+    </div>
+    <div class="contact__form">
+        <img src="images/contact.png" alt="contact image">
+        <form action="#">
+            <input type="text" placeholder="Type your name" required class="error"><br>
+            <input type="text" placeholder="Type your e-mail"><br>
+            <textarea placeholder="Type your message"></textarea><br>
+            <div class="checkbox">
+                <input type="checkbox" id="gdpr">
+                <label for="gdpr">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label><br>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+    </div> <!-- e: contact__form -->
+</section> <!-- e: contact -->
 <footer class="dark">
     <div class="container">
         <div class="logo">
@@ -142,8 +142,8 @@
             <div class="copyright">
                 Copyright &copy; Coders Lab
             </div>
-        </div>
-    </div>
-</footer>
+        </div> <!-- e: footer_area -->
+    </div> <!-- e: container:footer -->
+</footer> <!-- e: footer -->
 </body>
 </html>

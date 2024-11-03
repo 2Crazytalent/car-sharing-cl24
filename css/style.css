@@ -1,3 +1,5 @@
+/* Used variables for colors and fonts */
+
 :root {
     --primary-color: #000000;
     --white-color: #FFFFFF;
@@ -11,22 +13,28 @@
     --dark-adjecent-color: #28272C;
     --white-text-color: #B2B2B2;
     --dark-teriary-color: #D1D1D1;
-    --primary-font: normal normal bold 16px/22px Nunito Sans;
+    --primary-font: normal normal bold 16px/22px 'Nunito Sans';
+    --links-font: normal normal bold 14px/19px 'Nunito Sans';
 }
+
+/* Reset - Normalize */
+
 html, body, * {
     box-sizing: border-box;
 }
+
+/* Set Container */
 .container {
     width: 1088px;
     margin: 0 auto;
 }
+
+/* s: header */
+
 header {
-
     height: 807px;
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/image.png');
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/image.png') no-repeat;
     background-size:cover;
-    background-repeat: no-repeat;
-
 }
 header .top-nav {
     height: 93px;
@@ -47,28 +55,36 @@ header nav a {
     text-decoration: none;
     height: 93px;
     display: inline-block;
-    padding-left: 41.5px;
-    padding-right: 41.5px;
+    padding-left: 41px;
+    padding-right: 41px;
     padding-top: 35px;
 }
 header nav a:hover {
     background-color: var(--light-overlay-color);
-
 }
+/* e: header */
+
+/* s: logo */
+
 .logo {
     display: flex;
 }
 .logo span {
-    font: normal normal bold 35px/47px Nunito Sans;
+    font: normal normal bold 35px/47px 'Nunito Sans';
     color: var(--white-color);
     margin-left: 10px;
 }
 .logo span.colored { color: var(--secondary-color); }
+
+/* e: logo */
+
+/* s: banner */
+
 .banner {
     margin-top: 254px;
 }
 .banner h1 {
-    font: normal normal 900 90px/90px Nunito Sans;
+    font: normal normal 900 90px/90px 'Nunito Sans';
     color: var(--white-color);
     text-align: center;
     height: 123px;
@@ -79,6 +95,11 @@ header nav a:hover {
     color: var(--white-color);
     text-align: center;
 }
+
+/* e: banner */
+
+/* e: header:buttons */
+
 .actions {
     margin-top: 54px;
     text-align: center;
@@ -99,6 +120,11 @@ header nav a:hover {
     background-color: var(--white-color);
     color: var(--secondary-color);
 }
+
+/* e: header:buttons */
+
+/* s: divider */
+
 .icon {
     background-color: var(--secondary-color);
     border-radius: 30px;
@@ -108,8 +134,7 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
     margin-top: -27.5px;
-    box-shadow: 0px 3px 6px var(--secondary-overlay-color);
-
+    box-shadow: 0 3px 6px var(--secondary-overlay-color);
 }
 .icon a {
     background-image: url('../images/icon-down.png');
@@ -120,6 +145,11 @@ header nav a:hover {
     height: 21px;
     text-decoration: none;
 }
+
+/* e: divider */
+
+/* s: section:headings */
+
 .section__heading {
     display: flex;
     align-items: center;
@@ -129,21 +159,38 @@ header nav a:hover {
 .section__heading__line {
     width: 50px;
     height: 3px;
-    background: #FF0000 0% 0% no-repeat padding-box;
-    box-shadow: 0px 1px 6px #FF00004D;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px #FF00004D;
     border-radius: 8px;
 }
-main {
-    padding-top: 91px;
-}
+
+/* e: section:headings */
+
+
+/* s: headings */
+
 h2 {
-    font: normal normal bold 35px/47px Nunito Sans;
+    font: normal normal bold 35px/47px 'Nunito Sans';
     color: var(--primary-color);
     text-transform: uppercase;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+h3 {
+    font: normal normal normal 19px/26px 'Nunito Sans';
+    color: var(--text-color);
+}
+
+/* e: headings */
+
+/* s: blog */
+
+main {
+    padding-top: 91px;
+}
+
 .blog {
     display: flex;
     margin-bottom: 100px;
@@ -151,17 +198,13 @@ h2 {
 article img {
     margin-bottom: 25px;
 }
-h3 {
-    font: normal normal normal 19px/26px Nunito Sans;
-    color: var(--text-color);
-}
 
 article h3, article p {
     padding-right: 92px;
     margin-bottom: 15px;
 }
 article p {
-    font: normal normal 300 14px/19px Open Sans;
+    font: normal normal 300 14px/19px 'Open Sans';
     color: var(--text-color);
 }
 article a {
@@ -172,9 +215,14 @@ article a {
     color: var(--white-color);
     border-radius: 30px;
     display: inline-block;
-    font: normal normal bold 14px/19px Nunito Sans;
-    box-shadow: 0px 3px 6px var(--secondary-overlay-color);
+    font: var(--links-font);
+    box-shadow: 0 3px 6px var(--secondary-overlay-color);
 }
+
+/* e: blog */
+
+/* s: services */
+
 .dark {
     background-color: var(--dark-adjecent-color);
 }
@@ -216,6 +264,11 @@ article a {
     display: flex;
     padding-bottom: 100px;
 }
+
+/* e: services */
+
+/* s: contact */
+
 .contact {
     padding-top: 65px;
     padding-bottom: 65px;
@@ -246,20 +299,20 @@ article a {
 .contact__form textarea::placeholder
 {
     color: var(--white-text-color);
-    font: normal normal normal 16px/22px Nunito Sans;
+    font: normal normal normal 16px/22px 'Nunito Sans';
 }
 
 .error {
-    box-shadow: 0px 1px 6px var(--secondary-overlay-color);
+    box-shadow: 0 1px 6px var(--secondary-overlay-color);
     border: 1px solid var(--secondary-color)!important;
 }
 .contact__form input[type="submit"] {
     width: 142px;
     height: 40px;
-    box-shadow: 0px 3px 6px var(--secondary-overlay-color);
+    box-shadow: 0 3px 6px var(--secondary-overlay-color);
     border: 1px solid var(--secondary-color);
     border-radius: 40px;
-    font: normal normal bold 14px/19px Nunito Sans;
+    font: var(--links-font);
     color: var(--secondary-color);
     background-color: var(--white-color);
     margin-top: 20px;
@@ -268,7 +321,7 @@ article a {
 }
 
 .contact__form label[for="gdpr"] {
-    font: normal normal 300 10px/14px Open Sans;
+    font: normal normal 300 10px/14px 'Open Sans';
     color: #B2B2B2;
     width: 412px;
     display: inline-block;
@@ -283,14 +336,14 @@ article a {
     border-radius: 8px;
 }
 
-.checkhox { display: flex;}
+.checkbox { display: flex;}
 .contact__form input[type="checkbox"]:checked {
-    /*  background: url('../images/check.svg') 4.5px 4.5px no-repeat;
-     */
-    background-image: url('../images/check.svg');
-    background-repeat: no-repeat;
-    background-position: 4.5px 4.5px;
+    background: url('../images/check.svg') 4px 4px no-repeat;
 }
+
+/* e: contact  */
+
+/* s: footer */
 
 footer {
     padding-top: 40px;
@@ -303,8 +356,8 @@ footer .logo img {
     width: 19px;
 }
 footer .logo span{
-    font: normal normal bold 25px/34px Nunito Sans;
-    margin-left: 7.55px;
+    font: normal normal bold 25px/34px 'Nunito Sans';
+    margin-left: 7px;
 }
 .footer__area {
     display: flex;
@@ -314,7 +367,7 @@ footer .logo span{
     text-transform: uppercase;
     text-decoration: none;
     display: block;
-    font: normal normal bold 14px/19px Nunito Sans;
+    font: var(--links-font);
     margin-bottom: 7px;
 }
 .footer__area nav a:hover {
@@ -322,10 +375,11 @@ footer .logo span{
 }
 .footer__area .copyright {
     color: var(--dark-teriary-color);
-    font: normal normal 300 12px/16px Nunito Sans;
+    font: normal normal 300 12px/16px 'Nunito Sans';
     align-self: end;
-
 }
 .footer__area nav, .footer__area div {
     width: 25%;
 }
+
+/* e: footer */
